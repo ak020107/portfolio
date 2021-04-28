@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"
+                type="text/css"
+                href="style3.css"/>
+
+    </head>
+    <body>
+        <div class="home">
+            <a href="index.html"><img src="home.png" width=50></a>
+        </div>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+        <div class="timeline">
+            <ul>
+                
+
+                <li>
+                    <div class="content">
+                        <h3>MY START OF CODING</h3>
+                        <p>I started coding a few months ago with no experience but a lot of curiosity! This led to me wanting to learn a lot of advanced things way too early. When I realized that learning to prgram takes time and passion I really put my work into it and took some online classes to start my programming journey.</p>
+                    </div>
+                    <div class="time">
+                        <h4>SEPTEMBER 2020</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>TWO MONTHS AFTER THE START OF CODING</h3>
+                        <p>In these two months school had started but my eagerness for coding never went down. At this moment I was learning the basics of what coding is, what it does, and how it is used. I had also started to learn my first language which was JavaScript. This led to me making a few simple games that amazed me as to what programming can really do! I was very excited as to what I would learn next and my passion for programming grew!</p>
+                    </div>
+                    <div class="time">
+                        <h4>NOVEMBER 2020</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>PRESENT MOMENT</h3>
+                        <p>This time period would be where I am making this website and have learning JavaScript, HTML, CSS and am currently learning JSX. I have learned a lot in the past few months and have really used my creative side of my brain to bring out my imagination into reality with my code! The future can certainly change so this timeline will change with it but I certainly know that I will continue programming for the rest of my life! I would like to say good luck to my future self and to never give up on programming and using your creative imagination.</p>
+                    </div>
+                    <div class="time">
+                        <h4>APRIL 2021</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>2-4 YEARS OF CODING</h3>
+                        <p>At this moment of time I would be in high school which seems very soon for my present self. I am certain that I am taking programming electives during highschool that could help with future oppurtunities. Highschool would be a big part of my life since this is where my real programming will increase and be used much more! At this moment I should be finished learning the basics of a few languages that would hopefully include Python and other well known coding languages that are currently being used the most. I can not predict the future but I can say good luck to my future life with college and my future job.</p>
+                    </div>
+                    <div class="time">
+                        <h4>SEPT 2021-JUNE 2025</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>5-13 YEARS OF CODING</h3>
+                        <p>Currently, I would be in college but I do not know which one yet. Hopefully I get into a top university including Ivy league colleges like Harvard and MIT. Harvard will always be my number one goal for a college. I would love to learn their CS50 class for programming and would love to take a computer science major from there. Harvard is a delight to go to as a college and it would be even better to go there to study my passion and stay close to the family. Good luck to my future self who would be working hopefully under their passion.</p>
+                    </div>
+                    <div class="time">
+                        <h4>SEPT 2025-JUNE 2033</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>14-RETIREMENT YEARS OF CODING</h3>
+                        <p>At this moment I would be an expert of basically all languages of coding but the best thing about programming is that there is always more to learn! Hopefully, I would be working for a top tech company like Google or FaceBook. I would have a nice house and family and keep working my job which is also my passion. It could not get any better. I would start to change myself and become more mature. A lot of things will change at this moment in the future but it is still very far away currently. This timeline will be updated based on my moment of time in my life. Good luck to my future life and good luck to my past to get to this stage in life.</p>
+                    </div>
+                    <div class="time">
+                        <h4>JULY 2033-RETIREMENT</h4>
+                    </div>
+                </li>
+                <div style="clear: both;"></div>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            let progress= document.getElementById('progressbar')
+            let totalHeight=document.body.scrollHeight-window.innerHeight;
+            window.onscroll=function(){
+                    let progressHeight=(window.pageYOffset/totalHeight)*100
+                    progress.style.height=progressHeight+"%";
+            }
+    </script>
+    </body>
+</html>

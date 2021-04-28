@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>My Portfolio page</title>
+        <link rel="stylesheet"
+                type="text/css"
+                href="style.css"/>
+    </head>
+
+    <body>
+           <div  class="container">
+                  
+           </div>   
+       <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+
+        <div id="mainbox" onclick="openFunction()"> &#9776;</div>
+            <div id="menu" class="sidemenu">
+                    <a href="#" onclick="closeFunction()">Home</a>
+                    <a href="about.html" onclick="closeFunction()">About</a>
+                    <a href="games.html" onclick="closeFunction()">Projects</a>
+                    <a href="timeline.html" onclick="closeFunction()">Timeline</a>
+                    <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+            </div>
+            <script type="text/javascript">
+                function openFunction(){
+                document.getElementById("menu").style.width="300px";
+                document.getElementById("mainbox").style.marginLeft="300px";
+                document.getElementById("mainbox").innerHTML="";
+                }
+                function closeFunction(){
+                document.getElementById("menu").style.width="0px";
+                document.getElementById("mainbox").style.marginLeft="0px";
+                document.getElementById("mainbox").innerHTML="&#9776;";
+                }
+        </script>
+        
+        
+       
+         <div class="sign">
+            <p>AK</p>
+         </div>
+         <div class="looks">
+            
+            
+            <img src="black.png"width=1800 height=1300  />
+        </div>
+        
+        
+
+ <script type="text/javascript">
+                let progress= document.getElementById('progressbar')
+                let totalHeight=document.body.scrollHeight-window.innerHeight;
+                window.onscroll=function(){
+                        let progressHeight=(window.pageYOffset/totalHeight)*100
+                        progress.style.height=progressHeight+"%";
+                }
+        </script>
+           
+       
+        
+    </div> 
+       
+    </body>
+</html>

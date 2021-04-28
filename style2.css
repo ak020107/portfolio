@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:10px
+}
+body{
+    
+    font-family: sans-serif;
+    
+}
+.homepage{
+    width:100%;
+    position:absolute;
+    
+}
+.container{
+    position: absolute;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-left:40rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+h1{
+    color:#fff;
+    font-size: 5rem;
+    font-weight:700;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+}
+h2{
+    color:#fff;
+   
+    font-size: 4rem;
+    font-weight: 400;
+
+}
+.container img{
+    border-style: solid;
+    border-width: 10px;
+    margin-top:4rem;
+    margin-bottom:3rem;
+}
+p{
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    line-height:3rem ;
+    margin-bottom:5rem;
+}
+
+.boxes{
+    background: linear-gradient(to top, rgb(112, 234, 255)0%, rgb(255, 255, 255) 50%, rgb(255, 128, 255)100%);
+    width:100%;
+    height: 100vh;
+}
+.single-box{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.single-box li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height:25px;
+    background: rgba(0, 0, 0, 0.2);
+    animation:animate 20s linear infinite;
+    bottom:-150px;
+}
+.single-box li:nth-child(1){
+    left:85%;
+    width: 80px;
+    height:80px;
+    animation-delay: 0s;
+}
+.single-box li:nth-child(2){
+    left:12%;
+    width: 30px;
+    height:30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.single-box li:nth-child(3){
+    left: 30%;
+    width: 100px;
+    height:100px;
+    animation-delay: 5.5s;
+ 
+}
+.single-box li:nth-child(4){
+    left: 42%;
+    width: 150px;
+    height:150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+ 
+}
+.single-box li:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height:40px;
+    animation-delay: 0s;
+  
+ 
+}
+.single-box li:nth-child(6){
+    left: 15%;
+    width: 110px;
+    height:110px;
+    animation-delay: 3.5s;
+  
+ 
+}
+.single-box li:nth-child(6){
+    left: 75%;
+    width: 200px;
+    height:200px;
+    animation-delay: 4.5s;
+    bottom:-250px;
+
+  
+ 
+}
+@keyframes animate{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform:translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet"
+                type="text/css"
+                href="style1.css"/>
+</head>
+<body>
+    <div class="home">
+        <a href="index.html"><img src="home.png" width=100></a>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+           <a href="https://ak020107.github.io/Void/" ><img src="galactic.jpg"width=300 height=280></a>
+
+        </div>
+        <div class="content">
+            <h2>Stellar!<br><span>A galactic adventure!</span></h2>
+
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+           <a href="https://editor.p5js.org/armaan.kakkar07/present/Rd401lQfs"> <img src="balloons.jpg"width=300 height=280> </a>
+
+        </div>
+        <div class="content">
+            <h2>Balloon Buster!<br><span>A balloon popping adventure!</span></h2>
+
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+           <a href="https://editor.p5js.org/armaan.kakkar07/present/zOOyIyiTs"> <img src="ghost.png"width=300 height=280> </a>
+
+        </div>
+        <div class="content">
+            <h2>Ghost Jump!<br><span>The journey of a jumping ghost!</span></h2>
+
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="https://ak020107.github.io/TRex/"><img src="trex.png"width=300 height=280></a>
+
+        </div>
+        <div class="content">
+            <h2>T.R.E.X<br><span>The journey of a dinosaur!</span></h2>
+            
+
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="https://ak020107.github.io/Saving_Christmas/"><img src="christmas.PNG" width=300 height=280></a>
+
+        </div>
+        <div class="content">
+            <h2>Saving Christmas<br><span>The Journey of Santa's mishap!</span></h2>
+
+        </div>
+    </div>
+
+    <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+    <script type="text/javascript">
+        let progress= document.getElementById('progressbar')
+        let totalHeight=document.body.scrollHeight-window.innerHeight;
+        window.onscroll=function(){
+                let progressHeight=(window.pageYOffset/totalHeight)*100
+                progress.style.height=progressHeight+"%";
+        }
+</script>
+</body>
+
+
+
+</html>
